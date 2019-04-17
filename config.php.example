@@ -1,0 +1,9 @@
+<?php
+	$sqlconfig = array(
+		'dbtype' => 'mysqli',
+		'dbhost' => '...',
+		'dbuser' => '...',
+		'dbpass' => '...',
+		'dbname' => '...'
+	);
+?>
