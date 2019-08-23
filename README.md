@@ -1,6 +1,6 @@
 # k-tags-by-list
 
-Segédfelület a [K-Monitor Adatbázishoz](https://adatbazis.k-monitor.hu). Egy céglistához lekérdezi az egyes cégekhez tartozó címke URL-eket.
+Segédfelület a [K-Monitor Adatbázishoz](https://adatbazis.k-monitor.hu). Egy név listához (szervezetek vagy személyek) lekérdezi az egyes nevekhez tartozó címke URL-eket.
 
 
 
@@ -16,16 +16,17 @@ A `dummy.sql` fájl egy példa adatbázis sémát és néhány példa rekordot t
 
 ## Használat
 
-Az input mezőbe kell a cégneveket illeszteni, soronként egyet. Ha esetleg idézőjelben vannak, nem probléma, illetve a kis-/nagybetűk sincsenek megkülönböztetve.
+Az input mezőbe kell a neveket illeszteni, soronként egyet. Ha esetleg idézőjelben vannak, nem probléma, illetve a kis-/nagybetűk sincsenek megkülönböztetve.
 
-Az egyetlen gomb megnyomására a rendszer minden egyes input cégnévhez lekérdezi a címke URL-t az adatbázisból.
+Ki kell választani, hogy szervezetek között, vagy személyek között keressen a program.
 
-Az eredmény az output mezőben jelenik meg. Minden input cégnév szerepelni fog itt, függetlenül attól, hogy van-e találat. A címke URL-t a megfelelő cégnévhez tabulátor elválasztó után fűzi hozzá a program, így TSV formátumot kapunk, ami egy-az-egyben bemásolható pl. Excel-be.
+Az egyetlen gomb megnyomására a rendszer minden egyes input névhez lekérdezi a címke URL-t az adatbázisból.
+
+Az eredmény az output mezőben jelenik meg. Minden input név szerepelni fog itt, függetlenül attól, hogy van-e találat. A címke URL-t a megfelelő névhez tabulátor elválasztó után fűzi hozzá a program, így TSV formátumot kapunk, ami egy-az-egyben bemásolható pl. Excel-be.
 
 
 
 ## Továbbfejlesztési ötletek
 
 * Felület tuningolása (design, AJAX)
-* Kiterjesztés más (nem csak szervezet) címketípusokra
 * Cégnév egyezőség vizsgálat flexibilisebbé tétele
